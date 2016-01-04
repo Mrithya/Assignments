@@ -10,7 +10,7 @@ int main(void)
         for(j=1;j<=i;j++)
         {
             value=value*(i-j+1)/j;
-             printf("%d",value);
+             printf("%d\t",value);
         }
         printf("\n");
     }
