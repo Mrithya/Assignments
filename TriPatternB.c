@@ -2,15 +2,15 @@
 
 int main(void) 
 {
-    int i,j,k=1;
-    printf("%d\n",k);
+    int i,j,value=1;
+    printf("%d\n",value);
     for(i=1;i<6;i++)
     {
-        printf("%d",k);
+        printf("%d",value);
         for(j=1;j<=i;j++)
         {
-            k=k*(i-j+1)/j;
-             printf("%d",k);
+            value=value*(i-j+1)/j;
+             printf("%d",value);
         }
         printf("\n");
     }
