@@ -7,13 +7,13 @@ int main(void)
     {
         for(j=1;j<=i;j++)
         {
-            printf("%d",odd);
+            printf("%d\t",odd);
             odd=odd+2;
         } 
         printf("\n");
         for(j=1;j<=i+1;j++)
   	    {
-            printf("%d",even);
+            printf("%d\t",even);
             even=even+2;
   	    }
         printf("\n");
