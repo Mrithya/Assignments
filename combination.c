@@ -2,7 +2,7 @@
 #include<math.h>
 int main(void) 
 {
-    int a[]={1,2,3};
+	int a[]={1,2,3};
 	int i,j;
 	for(i=0;i<3;i++)
 	{
