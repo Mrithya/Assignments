@@ -35,8 +35,10 @@ void generate(int size)
                 continue;
             }
             else
+            {
                 matrix[i][j] = val++; 
-    		j++; 
+            }
+            j++; 
             i--;
         }
         printf("\n");
