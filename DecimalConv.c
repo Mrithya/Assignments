@@ -12,8 +12,7 @@ int main()
 	{
         printf("Cannot convert negative numbers");
         return 0;
-    }  
-     
+	}    
     if(base==0 || base==1) 
 	{
         printf("Cannot have 0 or 1 as a base.");
