@@ -10,7 +10,7 @@ int main()
 	scanf("%d",&base);
 	if(num < 0) 
 	{
-        printf("Cannot convert negative numbers");
+        printf("Cannot convert negative numbers.");
         return 0;
 	}    
     if(base==0 || base==1) 
