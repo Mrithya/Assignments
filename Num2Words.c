@@ -17,11 +17,11 @@ int main()
 	j=m%10;
 	if(m>9 && m<20)
 	{
-        if(i==1)
-        {
-            printf("%s",tens[j]);
-            return 0;
-        }
+		if(i==1)
+		{
+			printf("%s",tens[j]);
+			return 0;
+		}
 	}
 	else
 	{
