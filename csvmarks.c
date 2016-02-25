@@ -40,7 +40,7 @@ void sort(struct student stud[])
                     stud[i] = stud[j];
                     stud[j] = temp;
                 }
-            }
+			}
 		}
 	}
 }
