@@ -15,33 +15,33 @@ void sort(struct student stud[])
 	int i,j;
 	for(i=0;i<15;i++)
 	{
-        for(j=i+1;j<15;j++)
-        {
-            if( stud[i].cutoff < stud[j].cutoff )
-            {
-                temp = stud[i];
-                stud[i] = stud[j];
-                stud[j] = temp;
-            }
-            else if( stud[i].cutoff == stud[j].cutoff  )
-            {
-                if(stud[i].total < stud[j].total)
-                {
-                    temp = stud[i];
-                    stud[i] = stud[j];
-                    stud[j] = temp;
-                }
-            }
-            else if( stud[i].total == stud[j].total   )
-            {   
-                if(stud[i].mark[3] < stud[j].mark[3])
-                {
-                    temp = stud[i];
-                    stud[i] = stud[j];
-                    stud[j] = temp;
-                }
+	        for(j=i+1;j<15;j++)
+	        {
+			if( stud[i].cutoff < stud[j].cutoff )
+			{
+				temp = stud[i];
+				stud[i] = stud[j];
+				stud[j] = temp;
 			}
-		}
+			else if( stud[i].cutoff == stud[j].cutoff  )
+			{
+				if(stud[i].total < stud[j].total)
+				{
+					temp = stud[i];
+					stud[i] = stud[j];
+					stud[j] = temp;
+				}
+			}
+			else if( stud[i].total == stud[j].total   )
+			{   
+				if(stud[i].mark[3] < stud[j].mark[3])
+				{
+					temp = stud[i];
+					stud[i] = stud[j];
+					stud[j] = temp;
+				}
+			}
+	}
 	}
 }
 
