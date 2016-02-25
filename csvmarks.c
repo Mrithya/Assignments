@@ -41,7 +41,7 @@ void sort(struct student stud[])
 					stud[j] = temp;
 				}
 			}
-	}
+		}
 	}
 }
 
@@ -60,21 +60,21 @@ int main()
 	i=0;
 	while(!feof(fp1))
 	{
-        fscanf(fp1,"%d,%[^,],%d,%d,%d,%d,%d", &stud[i].slno, stud[i].name, &stud[i].mark[0],&stud[i].mark[1] , &stud[i].mark[2], &stud[i].mark[3], &stud[i].mark[4]);
-        
-        stud[i].total=stud[i].mark[0]+stud[i].mark[1]+stud[i].mark[2]+stud[i].mark[3]+stud[i].mark[4];
-		
-		stud[i].cutoff=(stud[i].mark[0]/2)+((stud[i].mark[1]+stud[i].mark[2])/4);
+		fscanf(fp1,"%d,%[^,],%d,%d,%d,%d,%d", &stud[i].slno, stud[i].name, &stud[i].mark[0],&stud[i].mark[1] , &stud[i].mark[2], &stud[i].mark[3], &stud[i].mark[4]);
 
+		stud[i].total=stud[i].mark[0]+stud[i].mark[1]+stud[i].mark[2]+stud[i].mark[3]+stud[i].mark[4];
+	
+		stud[i].cutoff=(stud[i].mark[0]/2)+((stud[i].mark[1]+stud[i].mark[2])/4);
+	
 		if(stud[i].mark[0]>=70  && stud[i].mark[1]>=70   && stud[i].mark[2]>=70  && stud[i].mark[3]>=70  && stud[i].mark[4]>=70 )
 		{
 			stud[i].result='P';
 		}
 		else
 		{
-            stud[i].result='F';
+			stud[i].result='F';
 		}
-		i++;
+	i++;
 	}
 
 	sort(stud);
@@ -86,7 +86,7 @@ int main()
 			fprintf(fp2, "%s,%f,%d,%c,%d,%d,%d,%d,%d\n",stud[i].name,stud[i].cutoff,stud[i].total,stud[i].result,stud[i].mark[0],stud[i].mark[1],stud[i].mark[2],stud[i].mark[3],stud[i].mark[4]);
 		}
 	}
-	fclose(fp1);
-	fclose(fp2);
-    return 0;
+fclose(fp1);
+fclose(fp2);
+return 0;
 }
